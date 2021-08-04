@@ -10,4 +10,7 @@ Có nhiều thuật toán khác nhau để tiến hành sắp xếp. Trong nội
 Sắp xếp nổi bọt hoạt động bằng cách hoán đổi các phần tử liền kề nếu chúng không theo thứ tự mong muốn. Quá trình này lặp lại từ đầu mảng đến cuối mảng.  
 Dưới đây là các bước để sắp xếp một mảng theo thứ tự tăng dần  
 Giả sử ta có mảng sau:  
-![](https://github.com/EriChannel/DataStructures_Algorithms_Techmaster/blob/ba18ea9f551e4e677115d507b7ed7e9d1505c528/images/bubble_sort.PNG)  
+![image](https://user-images.githubusercontent.com/70504465/128118532-d7f6c31f-1e0c-48b1-a534-5dcee7f0e519.png)  
+
+Trên thực tế số lần lặp có nhiều hơn. Bằng cách sắp xếp này, cho đến khi không còn hoán đổi nào nữa, chúng ta sẽ được một mảng đã sắp xếp  
+
