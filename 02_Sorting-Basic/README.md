@@ -40,7 +40,7 @@ Thuật toán sắp xếp chọn là thuật toán sắp xếp đơn giản dự
 - Mỗi lần lặp chúng ta sẽ liên tục tìm giá trị nhỏ nhất ở phần bên phải, hoán đổi vị trí của nó cho phần tử ngoài cùng bên trái  
 Quá trình này liên tục di chuyển qua lại mảng chưa được sắp xếp bởi một phần tử sang phải
 
-![](https://github.com/EriChannel/DataStructures_Algorithms_Techmaster/blob/7b1f642ea0e51aa8bda3a9fdcf36e087785070df/images/selection_sort.PNG)  
+![](https://github.com/EriChannel/DataStructures_Algorithms_Techmaster/blob/d522c47515cd279c4affaeff4b308ff2a710c5d3/images/selection_sort.PNG)  
 
 
 ## Sắp xếp mảng với Arrays.sort
