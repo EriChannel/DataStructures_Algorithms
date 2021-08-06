@@ -28,6 +28,7 @@ Với phương thức đệ quy đuôi, phương thức đệ quy sẽ được 
 **Ưu điểm:**  
 - Ngắn gọn, dễ hình dung  
 - Dễ triển khai  
+
 **Nhược điểm:**  
 - Nếu không được xử lý triệt để dễ gây tràn bộ nhớ stack  
 - Tốn hiệu năng về mặt thời gian và không gian bộ nhớ  
