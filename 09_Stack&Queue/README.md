@@ -9,3 +9,8 @@ Trong Queue, các phần tử được lưu trữ và truy cập theo cơ chế 
 
 ![](https://github.com/EriChannel/DataStructures_Algorithms_Techmaster/blob/19e6582cb3bcfed20817ea4e15a9de2e15bc2f63/images/FIFO.png)
 
+## Các thao tác với Stack và Queue
+- push: Thêm phần tử
+- pop: Lấy ra một phần tử
+- isFull: Kiểm tra xem Stack hoặc Queue đã đầy chưa
+- isEmpty: Kiểm tra xem Stack hoặc Queue có empty hay không
