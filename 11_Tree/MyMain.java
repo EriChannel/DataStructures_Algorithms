@@ -21,9 +21,8 @@ public class MyMain {
         
         MyBinarySearchTree mTree = new MyBinarySearchTree();
         mTree.mRoot = n6;
-        TreeNode deleteNode = mTree.deleteNode(n6, 2);
-        System.out.println(deleteNode.left.value);
         
+        mTree.deleteNode(n6, 2);
         //MyBinarySearchTree.PostOder(n0);
 
         System.out.println("DONE");
