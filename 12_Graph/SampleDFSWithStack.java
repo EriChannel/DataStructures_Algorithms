@@ -12,30 +12,27 @@ public class SampleDFSWithStack {
                             { 0, 0, 1, 1, 1, 0, 0},
                             { 0, 1, 1, 0, 0, 0, 0}};
 
-        // KHai bao
-        Stack<Integer> stack = new Stack<>(); 
-        Set<Integer> daDuyet = new HashSet<>(); //Sử dụng để kiểm tra 1 đỉnh đã duyệt hay chưa
+        //Khai báo
+        Stack<Integer> stack = new Stack<>();
+        Set<Integer> daDuyet = new HashSet<>();
 
-        // Khoi tao
-        stack.add(0); //Chọn đỉnh đầu là 0
-        daDuyet.add(0); //0 đã duyệt nên ta nhét vào đã duyệt
+        //Chọn đỉnh đầu là 0
+        stack.add(0);
+        daDuyet.add(0);
 
-        // Duyet theo stack
-        while(!stack.isEmpty()) //Nếu satck không rỗng
-        {
+        while(!stack.isEmpty()){
             int u = stack.pop();
-            // process u
-            System.out.print(u + " ");
-            //Add tất cả các đỉnh kề v với u  mà chưa được duyệt vào stack.
+            System.out.print(u + "\t");
+
+            //Add tất cả đỉnh kề v với u mà chưa được duyệt vào stack
 
             for (int v = 0; v < graph.length; v++) {
-                if(graph[u][v] == 1 && daDuyet.contains(v) == false)
-                {
+                if(graph[u][v] == 1 && daDuyet.contains(v) == false){
                     stack.add(v);
-                    // Đánh dấu đã duyệt v. 
                     daDuyet.add(v);
                 }
             }
+
         }
     }
 }

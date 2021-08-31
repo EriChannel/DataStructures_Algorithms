@@ -12,30 +12,29 @@ public class SampleBFSWithQueue {
                             { 0, 0, 1, 0, 0, 1, 0},
                             { 0, 0, 1, 1, 1, 0, 0},
                             { 0, 1, 1, 0, 0, 0, 0}};
-        // KHai bao
+
+        //Khai báo
         Queue<Integer> queue = new LinkedList<>();
         Set<Integer> daDuyet = new HashSet<>();
 
-        // Khoi tao
+        //Chọn đỉnh đầu là 0
         queue.add(0);
         daDuyet.add(0);
 
-        // Duyet theo stack
-        while(!queue.isEmpty())
-        {
+        while(!queue.isEmpty()){
             int u = queue.poll();
-            // process u
-            System.out.print(u + " ");
-            //Add tất cả các đỉnh kề v với u  mà chưa được duyệt vào stack.
+            System.out.print(u + "\t");
+
+            //Add tất cả đỉnh kề v với u mà chưa được duyệt vào queue
 
             for (int v = 0; v < graph.length; v++) {
-                if(graph[u][v] == 1 && daDuyet.contains(v) == false)
-                {
+                if(graph[u][v] == 1 && daDuyet.contains(v) == false){
                     queue.add(v);
-                    // Đánh dấu đã duyệt v. 
                     daDuyet.add(v);
                 }
             }
+
         }
     }
+    
 }
